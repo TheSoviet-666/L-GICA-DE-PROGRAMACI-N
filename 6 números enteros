@@ -1,0 +1,18 @@
+def main():
+    numeros = []
+
+    print("Introduce 6 números enteros:")
+
+    # Leer 6 números enteros desde el teclado y almacenarlos en el array
+    for _ in range(6):
+        numero = int(input("Introduce un número entero: "))
+        numeros.append(numero)
+
+    # Invertir el orden de los elementos en el array
+    numeros_invertidos = numeros[::-1]
+
+    # Mostrar el array invertido en la consola
+    print("El array invertido es:", numeros_invertidos)
+
+if __name__ == "__main__":
+    main()
