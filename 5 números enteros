@@ -1,0 +1,18 @@
+def main():
+    numeros = []
+
+    print("Introduce 5 números enteros:")
+
+    # Leer 5 números enteros desde el teclado y almacenarlos en el array
+    for _ in range(5):
+        numero = int(input("Introduce un número entero: "))
+        numeros.append(numero)
+
+    # Calcular la suma de todos los elementos
+    suma = sum(numeros)
+
+    # Mostrar la suma en la consola
+    print("La suma de todos los elementos es:", suma)
+
+if __name__ == "__main__":
+    main()
