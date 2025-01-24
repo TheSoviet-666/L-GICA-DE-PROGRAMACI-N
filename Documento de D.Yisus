@@ -1,0 +1,79 @@
+// Programa para calcular el área de un rectángulo
+import java.util.Scanner;
+
+public class AreaRectangulo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese el largo del rectángulo: ");
+        double largo = scanner.nextDouble();
+
+        System.out.print("Ingrese el ancho del rectángulo: ");
+        double ancho = scanner.nextDouble();
+
+        double area = largo * ancho;
+        System.out.println("El área del rectángulo es: " + area);
+    }
+}
+
+// Programa para calcular el promedio de tres números
+import java.util.Scanner;
+
+public class CalcularPromedio {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese el primer número: ");
+        double num1 = scanner.nextDouble();
+
+        System.out.print("Ingrese el segundo número: ");
+        double num2 = scanner.nextDouble();
+
+        System.out.print("Ingrese el tercer número: ");
+        double num3 = scanner.nextDouble();
+
+        double promedio = (num1 + num2 + num3) / 3;
+        System.out.println("El promedio es: " + promedio);
+    }
+}
+
+// Programa para calcular el índice de masa corporal (IMC)
+import java.util.Scanner;
+
+public class CalcularIMC {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese su peso en kilogramos: ");
+        double peso = scanner.nextDouble();
+
+        System.out.print("Ingrese su altura en metros: ");
+        double altura = scanner.nextDouble();
+
+        double imc = peso / (altura * altura);
+        System.out.println("Su índice de masa corporal (IMC) es: " + imc);
+    }
+}
+
+// Programa para calcular el salario neto de un empleado
+import java.util.Scanner;
+
+public class CalcularSalarioNeto {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese el salario bruto mensual: ");
+        double salarioBruto = scanner.nextDouble();
+
+        System.out.print("Ingrese el porcentaje de impuestos: ");
+        double porcentajeImpuestos = scanner.nextDouble();
+
+        System.out.print("Ingrese las deducciones adicionales: ");
+        double deduccionesAdicionales = scanner.nextDouble();
+
+        double impuesto = salarioBruto * (porcentajeImpuestos / 100);
+        double salarioNeto = salarioBruto - impuesto - deduccionesAdicionales;
+
+        System.out.println("El salario neto es: " + salarioNeto);
+    }
+}
