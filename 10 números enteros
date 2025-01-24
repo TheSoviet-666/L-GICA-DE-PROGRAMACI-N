@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class ContarParesImpares {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int[] numeros = new int[10];
+        int contadorPares = 0;
+        int contadorImpares = 0;
+
+        // Leer 10 números desde el teclado y almacenarlos en el array
+        System.out.println("Ingresa 10 números enteros:");
+        for (int i = 0; i < numeros.length; i++) {
+            numeros[i] = scanner.nextInt();
+        }
+
+        // Contar cuántos números son pares y cuántos son impares
+        for (int i = 0; i < numeros.length; i++) {
+            if (numeros[i] % 2 == 0) {
+                contadorPares++;
+            } else {
+                contadorImpares++;
+            }
+        }
+
+        // Mostrar los conteos en la consola
+        System.out.println("Números pares: " + contadorPares);
+        System.out.println("Números impares: " + contadorImpares);
+    }
+}
